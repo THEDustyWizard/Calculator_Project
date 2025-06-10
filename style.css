@@ -82,6 +82,19 @@ button:active {
     background-color: #289340;
 }
 
+.clear {
+    background-color: #ff3b30;
+    color: white;
+}
+
+.clear:hover {
+    background-color: #e02b20;
+}
+
+.clear:active {
+    background-color: #c01b10;
+}
+
 .financial {
     background-color: #007aff;
     color: white;

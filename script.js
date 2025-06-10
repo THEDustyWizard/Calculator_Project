@@ -14,7 +14,7 @@ function updateDisplay() {
     display.value = currentInput || previousInput || '0';
 }
 
-function clearDisplay() {
+function clearAll() {
     currentInput = '';
     operator = '';
     previousInput = '';
@@ -44,7 +44,7 @@ function calculateResult() {
 
     if (isNaN(prev) || isNaN(current)) {
         alert('Invalid input');
-        clearDisplay();
+        clearAll();
         return;
     }
 
@@ -61,7 +61,7 @@ function calculateResult() {
         case '/':
             if (current === 0) {
                 alert("Cannot divide by zero");
-                clearDisplay();
+                clearAll();
                 return;
             }
             result = prev / current;
